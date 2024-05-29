@@ -30,7 +30,7 @@ This project uses thousands of League of Legends games to calculate and display 
 ### Clone the Repository
 To get the repository either clone it via git:
 ```bash
-git clone --indsæt endelige url--
+git clone https://github.com/MamamSeedorf/LoLHelper.git
 ```
 Or download the repository as a zip file from github.com and unpack the folder.
 
@@ -44,8 +44,8 @@ npm install
 ```
 This installs all the dependencies highlighted in this readme aswell as in package.json
 
-Install the Visual Studio code extension "Live Sever" by Ritwick Dey.
-This can be done inside VS code by navigation to the extensions view or by pressing 'Ctrl+Shift+X'
+Install the Visual Studio code extension "Live Server" by Ritwick Dey.
+This can be done inside VS code by navigating to the extensions view or by pressing 'Ctrl+Shift+X'
 In the search box, type "Live Server"
 Click on "Live Server" by Ritwick Dey and then click "Install"
 
@@ -68,7 +68,7 @@ One player that is in the database is:
 
 **"ths22#EUW"**
 
-You can input this into the search in 'playerstats,' and it will work regardless of whether the API key is expired or not.
+You can input this into the search in 'playerstats' and it will work regardless of whether the API key is expired or not.
 
 
 
@@ -94,5 +94,6 @@ This is not needed for the program to run, but if you wish to fetch new games to
   
 ### Contact us
 If you experience any trouble feel free to contact the developers on mail: mpauls23@student.aau.dk or phone: +45 23 43 90 23
+
   ![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDNwZm8zemhzanFiNDExdWEyeWd4MGk4d2ZtbXB3MmY5NjI2MDZucCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o6vXNLzXdW4sbFRGo/giphy.gif)
 
