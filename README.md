@@ -34,7 +34,7 @@ git clone https://github.com/MamamSeedorf/LoLHelper.git
 ```
 Or download the repository as a zip file from github.com and unpack the folder.
 
-Open the LoLHelperP2 folder with VS code and follow the rest of the installation guide
+Open the LoLHelper folder with VS code and follow the rest of the installation guide
 
 
 ### Install dependencies
