@@ -1,0 +1,69 @@
+#champion-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #302b63;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: rgba(48, 43, 99, 0.85); 
+}
+
+.champion-image {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.champion-lore, .champion-stats, .skins-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.champion-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    text-align: left;
+}
+
+.champion-stats li {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.skin-image {
+    width: 520px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skin-image:hover {
+    transform: scale(1.1);
+}
+
+.skin {
+    margin: 10px;
+    text-align: center;
+}
+
+.ability {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ability-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 5px 0;
+    color: #4CAF50; 
+}

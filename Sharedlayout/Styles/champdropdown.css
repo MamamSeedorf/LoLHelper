@@ -1,0 +1,91 @@
+.wrapper {
+    position: relative; 
+    z-index: 10;
+    background-color: #4E536D;
+    position: relative; 
+    z-index: 10; 
+    width: 300px;
+}
+    .select-button, .championOptions li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .select-button {
+    height: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    justify-content: space-between;
+    background: #fff;
+}
+    .select-button i{
+    transition: transform 0.3s linear;
+    color: black;
+}
+    .wrapper.active .select-button i {
+    transform: rotate(-180deg);
+}
+
+    .content{
+        display: none;
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        width: fit-content;
+        padding: 20px;
+        padding-right: 0px;
+        padding-left: 40px;
+        border-radius: 15px;
+        background-color: white;
+        z-index: 5; 
+}
+
+    .wrapper.active .content{
+    display: block;
+}
+
+    .content .championOptions{
+    max-height: 100px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+    .championOptions li{
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+    .championOptions :hover{
+    background-color: #f2f2f2;
+}
+
+    .content .search{
+    position: relative;
+}
+
+    .search i{
+    left: 15px;
+    line-height: 34px;
+    position: absolute;
+    font-size: 13px;
+    color: rgb(77, 76, 76);
+}
+
+    #vsText {
+    color: black;
+}
+
+    .search input{
+    height: 30px;
+    width: 50%;
+    font-size: 15px;
+    padding: 0 40px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+

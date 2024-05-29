@@ -1,0 +1,446 @@
+.stats-wrap{
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 86vh;
+  background: linear-gradient(#091428,#0A1428);
+  border:1px solid #785A28;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; 
+  overflow:hidden;
+  box-shadow: 1px 2px 6px 1px black;
+}
+
+.resultDisplay {
+    position: relative;
+    width: 100vh; 
+    height: auto; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 20px; 
+  }
+
+.expandButton {
+  border: none;
+  color: #F0E6D2;;
+  width: 70px;
+  margin-bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.expandButton:hover{
+  cursor: pointer;
+  color: #e1d7c4;
+  box-shadow: 0px 6px 1px 1px black
+}
+
+.expandWrap{
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.summonerChampionImage{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 12%; 
+    top: 15%; 
+    border-radius: 50%;
+}
+
+.levelText {
+  position: absolute;
+  left: 20%; 
+  top: 50%; 
+  color: white; 
+  padding: 8px; 
+  margin: 0 auto; 
+  width: auto; 
+  font-size: 14px; 
+  text-align: center; 
+  border-radius: 50%; 
+}
+
+
+.displayElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  margin-right: 5px;
+}
+
+.statsText{
+  position: absolute;
+  left: 300px; 
+  top: 20%; 
+  font-size: 1.5em;
+}
+
+.participantDeathText {
+  color: red;
+}
+
+
+.kdaDisplay{
+  position: absolute;
+  left: 300px; 
+  top: calc(5% + 1.5em + 15px); 
+  font-size: 1em;
+}
+.minionKilledInMatch{
+  position: absolute;
+  left: 300px; 
+  top: calc(5% + 1.5em + 10px + 1em + 25px); 
+  font-size: 1em;
+}
+
+.csText{
+  font-size: smaller;
+}
+
+.matchResultColor{
+    position: absolute;
+    left: 20px; 
+    top: 40px; 
+    font-size: 1em;
+}
+
+.lastPlayedGame{
+  position: absolute;
+  left: 10px; 
+  top: 10px; 
+  font-size: 0.80em;
+}
+
+/*Particpants*/
+#elementResult{
+  height: 685px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin-left: auto;
+  border-radius: 15px;
+  gap: 10px;
+  margin: 10px 5px 10px auto;
+}
+
+#elementResult::-webkit-scrollbar-track{
+    background: #d1d1d1;
+    border-radius: 10px;
+}
+
+#elementResult::-webkit-scrollbar {
+  width: 12px;
+}
+
+#elementResult::-webkit-scrollbar-thumb {
+  background:#785A28; 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.participants {
+  display: flex;
+  align-items: stretch; 
+}
+
+.gameParticipantsWIN,
+.gameParticipantsLOSS {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.verticalLine {
+  width: 1px;
+    margin: 0 10px; 
+}
+
+.participant {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-bottom: 5px;
+  position: relative;
+  width: 100px; 
+  padding-left: 5px; 
+}
+
+.championIMG {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.winner {
+  border-left: 3px solid #4caf50;
+}
+
+.loser {
+  border-left: 3px solid #f44336;
+}
+
+/*Tab bar */
+.tab-container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  border-bottom: 0.5px solid #785A28;
+  padding: 10px;
+
+  height: fit-content;
+  box-sizing: border-box;
+  
+}
+
+.tabs { 
+  flex: 1 1 1;
+  display: flex;
+  justify-content: end;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px; 
+  color: #aaa; 
+  transition: color 0.3s ease;
+}
+
+.tab:hover{
+  transition: 1.5s;
+  background-color: rgb(0, 78, 161);
+  box-shadow: 0 4px 10px rgba(0, 123, 255);
+}
+.active-tab {
+  color: white;
+  background-color: rgb(0, 123, 255);
+}
+
+
+#usernameInput {
+  background-color: #F0E6D2;
+  padding: 12px 20px; 
+  border-radius: 25px; 
+  outline: none;
+  width: 300px; 
+  border: 2px solid #C89B3C;
+  font-size: 15px;
+  color: black;
+  height: 17px;
+}
+#usernameInput::placeholder{
+  color: black;
+  font-size: 15px;
+}
+.search-container{
+  display: flex;
+  justify-content: center;
+  flex: 1 1;
+}
+
+#searchButton {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Katarina spinner*/
+#spinnerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner img {
+    max-width: 100px;
+    height: auto; 
+    display: block; 
+    margin: auto; 
+}
+
+.summonerSpell1{
+    position: absolute;
+    left: 25%; 
+    top: 20%; 
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%; 
+    margin-right: 5px; 
+}
+
+.summonerSpell2{
+  position: absolute;
+  left: 25%; 
+  top: 45%; 
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  margin-right: 5px;
+} 
+
+.item-container {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 75%;
+  left: 0;  
+  border-radius: 35%;
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgb(112, 112, 112);
+}
+
+.item-hover-box {
+  position: absolute;
+  top: 10;
+  left: 10;
+  width: 150px;
+  background: rgba(0, 0, 0, 0.5); 
+  color: white;
+  display: none;
+  text-align: center;
+  padding: 5px;
+}
+
+#expandWrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px, 10px, 10px;
+  flex-direction: column-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.teamWrap{
+  display:flex;
+  width: 31vw;
+  justify-content: center;
+}
+
+.teamColumn {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 2.5%;
+}
+
+.winningTeam {
+  background-color: #243763;
+  width: 400px;
+  height: auto;
+}
+
+.losingTeam {
+  background-color: #3B1F2B;
+  width: 400px;
+  height: auto;
+}
+
+.champion-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #444;
+  font-size: 0.9em;
+  gap: 5px;
+}
+
+.champion-image {
+  width: 30px;
+  height: 30px;
+}
+
+.champion-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.7em;
+  flex: 1 1 1;
+}
+
+.kda, .cs {
+  flex: 1 1 1;
+}
+
+.all-items-container {
+  min-width: 140px;
+  display: flex;
+  flex: 1 1 1;
+}
+
+.summoner-tag{
+  max-width: 80px;
+  flex: 1 1 1;
+}
+
+
+
+.item-image2 {
+  width: 20px;
+  height: 20px;
+}
+
+.all-summoner-spells-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5px;
+  font-size: 0.7em;
+}
+
+.single-sum-spell-container {
+  margin-bottom: 2px;
+}
+
+.sum-spell-image {
+  width: 15px;
+  height: 15px;
+}
+
+.pageContainer{
+  height: inherit;
+display: flex;
+flex-direction: row;
+}

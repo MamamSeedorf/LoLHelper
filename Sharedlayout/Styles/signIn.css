@@ -1,0 +1,60 @@
+.loginBox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#091428,#0A1428); 
+    border: 1px solid #785A28;
+    width: 350px;
+    height: 500px; 
+    margin: 8% auto; 
+    border-radius: 5%;
+}
+
+.title{
+    flex: 0.2 1;
+}
+
+.buttons{
+    flex: 0.5 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button{
+    background: linear-gradient(#005A82,#0AC8B9);
+    font-family: 'spiegelregular';
+    border-radius: 5px;
+    padding: 10px 30px; 
+    border: 1px solid #785A28;
+    width: 208px;
+}
+
+.button:hover{
+    color:#F0E6D2;
+    cursor: pointer;
+}
+
+.inputBoxes{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputBoxes input[type="text"],
+.inputBoxes input[type="password"] {
+width: 250px;
+padding: 10px;
+border: 1px solid #785A28;
+border-radius: 4px;
+background-color: #F0E6D2;;
+margin-bottom: 10px;
+}
+
+input.insertion:hover{
+    cursor:pointer;
+}

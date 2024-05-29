@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'beaufort_for_lolbold';
+    src: url(fonts/beaufortforlol-bold-webfont.woff2) format('woff2'),
+         url(fonts/beaufortforlol-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'spiegelregular';
+    src: url(fonts/spiegel-regular-webfont.woff2) format('woff2'),
+         url(fonts/spiegel-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    margin: 0px;
+    font-family: 'spiegelregular';
+    color: #F0E6D2;
+        background-image: url('../images/abyss.jpg.webp');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+nav{
+    flex-wrap: wrap;
+
+    display: flex;
+}
+
+
+
+nav a{    
+    font-family: 'beaufort_for_lolbold';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(200, 155, 60);
+    list-style-type: none; 
+    text-decoration: none;}
+
+.left{
+    flex: 1 1;
+    display: flex;
+}
+.left { 
+    gap: 50px;
+    align-items: center;}
+
+.center{
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.center a{
+    font-size: 3rem;
+}
+
+.right{
+    flex: 1 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+div a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+a{
+    color:inherit
+}
+
+.navraj{
+    padding: 15px;;
+  border-bottom:0.5px solid #785A28;
+  background: linear-gradient(#091428,#0A1428); 
+}

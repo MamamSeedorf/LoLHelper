@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LolGuides</title>
+    <link rel="stylesheet" href="../Sharedlayout/Styles/mainTheme.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/champions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header-placeholder"> </div>
+
+    <div class="overhead-container"> 
+    <div class="search-container">
+        <input type="text" id="championNameInput" placeholder="Search for champion" autocomplete="off">
+    </div>
+    
+    <div id="spinnerOverlay" style="display:none;">
+        <div class="spinner"></div>
+    </div>
+
+     <div id="champions-container">
+        </div>
+    </div>
+
+    <script src="../helpers/APIFunctions.mjs"></script> 
+    <script src="../Views/ViewJavascript/championLoaderScript.js"></script> 
+    <script src="../Views/ViewJavascript/viewHelper.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function() {
+        loadHeader();
+    });
+    </script>
+</body>

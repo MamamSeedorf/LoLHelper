@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builds</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="siteSheet">
+        <div class="boxContainer" id="championInfo">
+            <div class="splitBoxContainer" id="championNameAndPicture"> 
+                <div class="championName" id="championName"></div>
+                <img class="championImage" id="championImage" src="" alt="Champion Image">
+            </div>
+            <div class="splitBoxContainer" id="championRates">
+                <div id="championWinrateAndPickRate">Winrate placeholder</div>
+                <div id="buttonsContainer">
+                    <button data-lane="TOP" class="roleButton">
+                        <img src="../Sharedlayout/images/lol-role-top.png" width="35" height="35">
+                    </button>
+                    <button data-lane="JUNGLE" class="roleButton">
+                        <img src="../Sharedlayout/images/lol-role-jungle.png" width="35" height="35">
+                    </button>
+                    <button data-lane="MIDDLE" class="roleButton">
+                        <img src="../Sharedlayout/images/lol-role-mid.png" width="35" height="35">
+                    </button>
+                    <button data-lane="BOTTOM" class="roleButton">
+                        <img src="../Sharedlayout/images/lol-role-bot.png" width="35" height="35">
+                    </button>
+                    <button data-lane="UTILITY" class="roleButton">
+                        <img src="../Sharedlayout/images/lol-role-support.png" width="35" height="35">
+                    </button>
+                </div>
+            </div>
+            
+            <div class="splitBoxContainer" id="versusChamp">
+                
+            </div>
+            <div class="splitBoxContainer" id="championVersus">
+                <div class="wrapper" id="matchupSearch">
+                    <div class="select-button"> 
+                        <span id="vsText">Vs champion</span> 
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="content">
+                        <div class="search">
+                            <input type="text" id="championInput" placeholder="Search for a champion">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <ul class="championOptions"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="boxContainerHeader">Summoner Spells</h2>
+        
+        <div class="boxContainer" id="championSumSpells">
+            <div id="summonerSpellsWinrateTotalGames">winrate & pickrate placeholder</div>
+            <div class="sumSpellsSplitContainer" id="mainSumSpells">
+                <div class="sumSpellContainer" id="sumSlot1">
+                    <img src=""> 
+                </div>
+                <div class="sumSpellContainer" id="sumSlot2">
+                    <img src=""> 
+                </div>
+            </div>
+
+
+        </div>
+
+    <h2 class="boxContainerHeader"> Abilities </h2>
+    <div class="boxContainer" id="championAbilites">
+        <div class="abilitySplitContainer" id="championAbilityMap">
+            <div id="abilityWinrateTotalGames">winrate & pickrate placeholder</div>
+        </div>
+        <div class="abilitySplitContainer" id="championAbilityPrio">
+            <div class="championAbilityContainer" id="championAbility1">
+                <img id="qAbilityImage" class="abiliyImage" src=""> 
+                <div id="qAbilityName" class="abilityName"></div>
+            </div>
+            <img class="arrowPicAbilities" src="../Sharedlayout/images/arrow.png"> </img>
+            <div class="championAbilityContainer" id="championAbility2">
+                <img id="wAbilityImage" class="abiliyImage" src="">
+                <div id="wAbilityName" class="abilityName"></div>
+            </div>
+            <img class="arrowPicAbilities" src="../Sharedlayout/images/arrow.png"> </img>
+            <div class="championAbilityContainer" id="championAbility3">
+                <img id="eAbilityImage" class="abiliyImage" src="">
+                <div id="eAbilityName" class="abilityName"></div>
+            </div>
+            <img class="arrowPicAbilities" src="../Sharedlayout/images/arrow.png"> </img>
+            <div class="championAbilityContainer" id="championAbility4">
+                <img id="rAbilityImage" class="abiliyImage" src="">
+                <div id="rAbilityName" class="abilityName"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <h2 class="boxContainerHeader"> Runes</h2>
+    <div class="boxContainer" id="championRunes">
+    <div id="runeWinrateTotalGames">winrate & pickrate placeholder</div>
+    <div class="runeWrap">
+    <div class ="runePageContainer" id="mainRuneContainer">
+        <div id="mainRunePathText"> rune path placeholder</div>
+        <div id="keystoneRow">
+            <div id="keystoneRune0" class="keystoneRuneContainer"></div>
+            <div id="keystoneRune1" class="keystoneRuneContainer"></div>
+            <div id="keystoneRune2" class="keystoneRuneContainer"></div>
+            <div id="keystoneRune3" class="keystoneRuneContainer"></div>
+        </div>
+        <div class="minorRunePath">
+        <div id="runeFirstRow" class="minorRuneRow">
+            <div class="minorRuneBox">
+            <div id="minorRune0" class="minorRuneContainer"></div>
+            <div id="minorRune1" class="minorRuneContainer"></div>
+            <div id="minorRune2" class="minorRuneContainer"></div>
+            </div>
+        </div>
+        <div id="runeSecondRow" class="minorRuneRow">
+            <div class="minorRuneBox">
+            <div id="minorRune3" class="minorRuneContainer"></div>
+            <div id="minorRune4" class="minorRuneContainer"></div>
+            <div id="minorRune5" class="minorRuneContainer"></div>
+        </div>
+        </div>
+        <div id="runeThirdRow" class="minorRuneRow">
+            <div class="minorRuneBox" id="test">
+        <div id="minorRune6" class="minorRuneContainer"></div>
+        <div id="minorRune7" class="minorRuneContainer"></div>
+        <div id="minorRune8" class="minorRuneContainer"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="runePageContainer" id="secondaryRuneContainer">
+        <div id="secondaryRunePathText"> rune path placeholder</div>
+        <div class="minorRunePath">
+        <div id="runeFourthRow" class="minorRuneRow">
+            <div id="minorRune9" class="minorRuneContainer"></div>
+            <div id="minorRune10" class="minorRuneContainer"></div>
+            <div id="minorRune11" class="minorRuneContainer"></div>
+        </div>
+        <div id="runeFifthRow" class="minorRuneRow">
+            <div id="minorRune12" class="minorRuneContainer"></div>
+            <div id="minorRune13" class="minorRuneContainer"></div>
+            <div id="minorRune14" class="minorRuneContainer"></div>
+        </div>
+        <div id="runeSixthRow" class="minorRuneRow">
+            <div id="minorRune15" class="minorRuneContainer"></div>
+            <div id="minorRune16" class="minorRuneContainer"></div>
+            <div id="minorRune17" class="minorRuneContainer"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <h2 class="boxContainerHeader"> Items</h2>
+    <div class="boxContainer" id="championItems">
+        <div id="itemWinrateTotalGames">winrate & pickrate placeholder</div>
+
+        <div class="itemContainer">
+    
+            <div class="singleitem-container">
+                <p class="item-rec-text"> Starter </p>
+                <div class="item-picture-container" id="item1">
+                    <div class="itemHoverBox" id="itemHoverBox1"></div>
+                </div>
+            </div>
+    
+            <img src="../Sharedlayout/images/arrow.png" class="arrowPic">
+    
+            <div class="singleitem-container" id="firstItem">
+                <p class="item-rec-text"> First </p>
+                <div class="item-picture-container" id="item2">
+                    <div class="itemHoverBox" id="itemHoverBox1"></div>
+                </div>
+            </div>
+    
+            <img src="../Sharedlayout/images/arrow.png" class="arrowPic">
+    
+            <div class="singleitem-container">
+                <p class="item-rec-text"> Second </p>
+                <div class="item-picture-container" id="item3">
+                    <div class="itemHoverBox" id="itemHoverBox1"></div>
+                </div>
+            </div>
+    
+            <img src="../Sharedlayout/images/arrow.png" class="arrowPic">
+    
+            <div class="singleitem-container">
+                <p class="item-rec-text"> Third </p>
+                <div class="item-picture-container" id="item4">
+                    <div class="itemHoverBox" id="itemHoverBox1"></div>
+                </div>
+            </div>
+    
+            <img src="../Sharedlayout/images/arrow.png" class="arrowPic">
+    
+            <div class="singleitem-container">
+                <p class="item-rec-text"> Fourth </p>
+                <div class="item-picture-container" id="item5">
+                    <div class="itemHoverBox" id="itemHoverBox1"></div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</div>
+    
+    <script src="../Views/ViewJavascript/viewHelper.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function() {
+        loadHeader();
+    });
+    </script>
+    <script src="../Views/ViewJavascript/championSummonerLoader.js"></script>
+    <script src="../helpers/fetchData.mjs"></script>
+    <script src="../helpers/APIFunctions.mjs"></script>¨
+    <script src="../Views/ViewJavascript/championRuneLoaderScript.js"></script>
+    <script src="../Views/ViewJavascript/championItemVisual.js"></script>
+    <script src="../Controller/championItemLoader.js"></script>
+    <script src="../Views/ViewJavascript/championDetailLoaderScript.js"></script>
+    <script src="../Controller/championDetailLoader.js"></script>
+    <script src="../Controller/championRuneLoader.js"></script>
+    <script src="../Views/ViewJavascript/championMatchupLoader.js"></script>
+    <script src="../Views/ViewJavascript/championAbilityLoader.js"></script>
+    <script src="../Controller/loadOptimalBuildForChampion.js"> </script>
+    <script src="../Views/ViewJavascript/loadOptimalBuildForChampionScript.js"></script>
+    
+    <link rel="stylesheet" href="../Sharedlayout/Styles/champdropdown.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/mainTheme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/championBuilds.css">
+</body>
+</html>
+

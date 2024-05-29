@@ -1,0 +1,101 @@
+#summonerStats {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+    
+table {
+    width: 100%;
+    border-collapse: collapse;
+}   
+    
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 20px auto;
+}
+    
+.chart {
+    flex-basis: calc(50% - 20px); 
+    margin: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff; 
+    padding: 10px;
+}
+    
+canvas {
+    width: 100%;
+    max-height: 250px; 
+}
+
+.search-container {
+    text-align: center;
+    margin: 40px;
+}
+    
+#usernameInput1,#usernameInput2 {
+    width: 25%; 
+    padding: 15px; 
+    border-radius: 20px; 
+    border: 2px solid #5D5D5D; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-right: 10px;
+    outline: none; 
+}
+
+#searchButtonCompare {
+    padding: 15px 25px; 
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+}
+
+#searchButtonCompare:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#spinnerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+    
+.spinner {
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #3498db; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+    
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.search-container {
+    background: none; 
+}
+    
+.chart{
+    background-color: #302b63;
+} 

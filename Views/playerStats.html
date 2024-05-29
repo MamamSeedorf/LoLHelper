@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LolGuides</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../Sharedlayout/Styles/mainTheme.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/spiderwebStats.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/playerStats.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="stats-wrap">
+    <div class="tab-container">
+        <div class="tabs" style="display: none;">
+            <div class="tab active-tab" data-queue-id="420">Ranked solo</div>
+            <div class="tab" data-queue-id="430">Normal (Blind Pick)</div>
+            <div class="tab" data-queue-id="400">Normal Draft</div>
+            <div class="tab" data-queue-id="490">Quick Play</div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="usernameInput" placeholder="Search" autocomplete="off">
+            <button id="searchButton">Search</button>
+        </div>
+    
+    </div>
+
+    <div class="pageContainer">
+    <div id = polarChartWrapper>
+        <canvas id="myPolarChart"></canvas>
+        <div id="image-container"></div>
+        <div id="statText-container"></div>
+    </div>
+        <div id="elementResult"></div>
+    </div>
+</div>
+    
+  
+
+    <div id="spinnerOverlay" style="display:none;">
+        <div class="spinner" id="spinner">
+        </div>
+    </div>
+    
+    <script type="module">
+        import fetch from 'https://cdn.skypack.dev/node-fetch';
+    </script>
+    <script src="../helpers/APIFunctions.mjs"></script>
+    <script src="../helpers/fetchData.mjs"></script>
+    <script src="../Views/ViewJavascript/championItemVisual.js"></script>
+    <script src="../Controller/championItemLoader.js"></script>
+    <script src="../Views/ViewJavascript/randomLoadingGifs.js"></script>
+    <script src="../Controller/playerStats.js"></script>
+    <script src="../Views/ViewJavascript/playerStatsScript.js"></script>
+    <script src="../Controller/spiderwebStats.js"></script>
+    <script src="../Views/ViewJavascript/spiderWebStatsScript.js"></script>
+    <script src="../Views/ViewJavascript/viewHelper.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function() {
+       loadHeader();
+    });
+    </script>
+</body>
+</html>

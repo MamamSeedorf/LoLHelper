@@ -1,0 +1,435 @@
+.siteSheet { 
+    width: 1000px;
+    height: fit-content;
+    background: linear-gradient(#091428,#10244c);
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 1px solid rgb(200, 155, 60);;
+    }
+
+#championInfo {
+    flex-direction: row;
+    position: relative; 
+    width: 1000px;
+    height: 200px;
+    background: linear-gradient(#102245,#10244c);
+    border-bottom: 1px solid rgb(200, 155, 60);
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    box-shadow: 0px 3px 6px 0px black;
+}
+
+#versusChamp{
+    display:flex;
+    flex-direction: column;
+}
+
+.splitBoxContainer {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.championName{
+    margin: 16px 0px;
+}
+
+#championInfo > .splitBoxContainer:first-child {
+    left: 0;
+}
+
+#championInfo > .splitBoxContainer:nth-child(2) {
+    left: 350px; 
+
+}
+
+#highlightRune {
+    opacity: 1;
+}
+
+#championInfo > .splitBoxContainer:last-child {
+    display: flex;
+    align-items: start;
+    margin-top: 15px;
+    margin-right: 15px;
+    right: 0; 
+}
+
+#championNameAndPicture {
+    flex-direction: column; 
+    justify-content: center; 
+  }
+
+#championRates {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boxContainerHeader{
+    font-size: 20px;
+    width: 850px;
+    margin-left: 75px;
+    margin-top: 25px;
+}
+
+#championRunes{
+    flex-direction: column;
+}
+
+
+
+.boxContainer {
+    flex-direction: column;
+    justify-content: center;
+    display:flex;
+    background: linear-gradient(#102245,#10244c);
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(200, 155, 60);
+    box-shadow: 1px 3px 4px 0px black;
+}
+
+.boxContainer img {
+    border-radius: 4px;
+}
+
+
+#championRunes {
+    position: relative;
+    width: 850px; 
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.abilityName{
+    display:flex;
+    justify-content: center;
+}
+
+.runePageContainer {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#buttonsContainer{
+    width: 260px;
+}
+
+.minorRuneImage, .keystoneImage{
+    opacity: 0.3;
+}
+
+
+#championRunes > .runePageContainer:nth-child(2) {
+    left: 0; 
+}
+
+#championRunes > .runePageContainer:last-child {
+    left: 350px;
+}
+
+#summonerSpellsWinrateTotalGames{
+    margin-top: 15px;
+}
+
+#mainSumSpells{
+    margin-top: 15px;
+    padding: 15px 0px;
+    border-top: 3px solid grey;
+}
+
+#mainRuneContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#runePath { 
+    width: 150 px;
+    height: 35px;
+}
+
+#keystoneRow {
+    width: 250px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.keystoneRuneContainer {
+    height: 80px;
+    width: 62px;
+    
+    
+}
+
+.minorRunePath {
+    width: 200px;
+    height: 200px;
+    
+}
+
+#secondaryRuneContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.minorRuneRow {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+}
+
+.minorRuneBox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.keystoneRuneContainer {
+    width: 60px; 
+    height: 60px; 
+    overflow: hidden; 
+}
+
+.minorRuneContainer {
+    width: 40px; 
+    height: 40px; 
+    overflow: hidden; 
+}
+
+.keystoneRuneContainer img, .minorRuneContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.arrowPic {
+    width: 50px;
+    margin-top: 50px;
+}
+
+.arrowPicAbilities {
+    width: 50px;
+}
+
+#championItems {
+    display: flex;
+    width: 852px;
+    height: 200px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemWinrateTotalGames{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.itemContainer {  
+    border-top: 3px solid grey;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-picture-container {
+    position: relative;
+}
+
+
+
+#championAbilites {
+    flex-direction: column;
+    position: relative;
+    width: 850px; 
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abilitySplitContainer {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    gap: 20px;
+}
+#runeWinrateTotalGames{
+
+    margin: 10px 0;
+}
+
+.runeWrap{
+    display:flex;
+    flex-direction: row;
+}
+
+#championAbilites > .runePageContainer:first-child {
+    left: 0; 
+}
+.runeWrap > .runePageContainer:last-child {
+    left: 350px;
+    border-left: solid grey;
+  
+}
+
+
+
+#championAbilitiyPrio{
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+.championAbilityContainer { 
+    width: 50px;
+}
+
+#championSumSpells { 
+    flex-direction: column;
+    position: relative;
+    width: 850px; 
+    height: fit-content; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sumSpellsSplitContainer { 
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    gap: 20px;
+}
+
+#summonerSpellsWinrateTotalGames{
+    text-shadow: 2px 4px 3px black;
+}
+
+#abilityWinrateTotalGames{
+    text-shadow: 2px 4px 3px black;
+}
+
+#runeWinrateTotalGames{
+    text-shadow: 2px 4px 3px black;
+}
+
+.roleButton{
+    background: none;
+    border: none;
+}
+
+.roleButton:hover{
+    cursor: pointer;
+    box-shadow: inset 1px 1px 20px 10px rgb(200, 155, 60);
+}
+
+#secondarySumSpells { 
+    border-left: solid grey;
+}
+
+#itemWinrateTotalGames{
+    text-shadow: 2px 4px 3px black;
+}
+
+#championAbilityMap { 
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid grey;
+}
+
+.hoverBox {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;  
+    display: none;
+}
+
+.abilityHoverBox {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;  
+    display: none;
+}
+
+.runeHoverBox {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;  
+    display: none;
+}
+
+.summonerHoverBox {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;  
+    display: none;
+}
+
+.itemHoverBox {
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.laneButtonHighlight {
+    background-color: rgba(255, 0, 179, 0.2);
+    color: white; 
+    border: 2px solid rgba(255, 0, 179, 0.2); 
+    border-radius: 5px; 
+    padding: 5px; 
+    transition: background-color 0.3s, border 0.3s; 
+    position: relative; 
+}
+
+.roleButton img {
+    transition: transform 0.3s; 
+}
+
+.laneButtonHighlight img {
+    transform: scale(1.1); 
+}

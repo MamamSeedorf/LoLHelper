@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'beaufort_for_lolbold';
+    src: url(fonts/beaufortforlol-bold-webfont.woff2) format('woff2'),
+         url(fonts/beaufortforlol-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'spiegelregular';
+    src: url(fonts/spiegel-regular-webfont.woff2) format('woff2'),
+         url(fonts/spiegel-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-image: url('../images/abyss.jpg.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#frontBox_Container{
+    flex-wrap: wrap;
+    background: linear-gradient(#091428,#0A1428); 
+    opacity: 0.95;
+    width: auto;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid #785A28;
+}
+
+
+#frontChampion_Container{
+    flex-wrap: wrap;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+#suggestionContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.champion{
+    padding-bottom: 2%;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+h1{
+    font-family: 'beaufort_for_lolbold';
+    justify-content: center;
+}
+
+h2{ 
+    margin-bottom: 35px;
+    font-family: 'beaufort_for_lolbold';
+    border-bottom: 1px solid #F0E6D2;
+}
+
+.champion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.championChoice-img:hover{
+    box-sizing: border-box;
+    transform: scale(1.2);
+    border: 1px solid #C89B3C;
+    cursor:pointer;
+}
+
+.icon-img{
+    margin-bottom: 15px;
+    height: 35px;
+}

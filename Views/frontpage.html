@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LolGuides</title>
+    <link rel="stylesheet" href="../Sharedlayout/Styles/mainTheme.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/frontpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <div id="frontBox_Container">   
+        <h2> Select a suggested champion</h2>
+        <div id="frontChampion_Container"> </div>
+    </div>
+    <script src="../Views/ViewJavascript/viewHelper.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function() {
+        loadHeader();
+    });
+    </script>
+    
+    <script src="../helpers/APIFunctions.mjs"></script>
+    <script src="../Views/ViewJavascript/frontPageChampionLoad.js"></script>
+    
+</body>

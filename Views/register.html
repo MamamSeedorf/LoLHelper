@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="../Sharedlayout/Styles/signIn.css">
+    <link rel="stylesheet" href="../Sharedlayout/Styles/mainTheme.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class=loginBox id="loginBox">
+    <div class="title">Create an account</div>
+    <form class="registrationForm" id="registrationForm">
+        <div class="inputBoxes">
+            <label for="username"> Enter Username </label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="inputBoxes">
+            <label for="username"> Riot ID</label>
+            <input type="text" id="riotId" name="riotId">
+            </div>
+        <div class="inputBoxes">
+            <label for="password"> Enter password </label>
+            <input type="text" id="password" name="password">
+        </div>
+        <div class="buttons">
+        <input class="button" type="submit" name="submit" value="Submit"></button>
+        <button class="button" onclick="window.location.href='../Views/login.html'"> I already have an account</button>
+        </div>
+    </form>
+    <script type="module" src="../Controller/register.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function() {
+        loadHeader();
+    });</script>
+    
+    <script src="../Views/ViewJavascript/viewHelper.js"></script>
+</body>
+
+</html>
