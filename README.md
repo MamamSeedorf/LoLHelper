@@ -1,6 +1,6 @@
 
 # League of Legends Game Analysis and Optimal Build 
-Repository: "https://github.com/MamamSeedorf/LoLHelper"
+Repository: https://github.com/MamamSeedorf/LoLHelper
 ## Overview
 This project uses thousands of League of Legends games to calculate and display optimal builds for each champion. Users can use the system to view the most effective item builds (according to our algorithms) based on a dataset of game results.
 
